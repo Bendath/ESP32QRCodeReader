@@ -9,25 +9,67 @@ Internally this lib uses a slight modified version of the [Quirc library](https:
 - EN-US - See demo video at https://twitter.com/alvaroviebrantz/status/1290116219199279104?s=20
 - PT-BR - Veja video de demo em https://twitter.com/alvaroviebrantz/status/1290116405824806912?s=20
 
-## Usage
+## Installation
 
-Is recommended to use PlatformIO to install this lib. Add `ESP32QRCodeReader` to your `platformio.ini` file.
+### PlatformIO (Recommended)
 
-From PlatformIO library:
+**Using Terminal/Command Line:**
 
+```bash
+# Install from PlatformIO Registry
+pio pkg install --library "ESP32QRCodeReader"
+
+# Or install directly from GitHub
+pio pkg install --library "https://github.com/alvarowolfx/ESP32QRCodeReader.git"
 ```
-lib_deps=
+
+**Or add to your `platformio.ini` file:**
+
+```ini
+lib_deps =
   ESP32QRCodeReader
 ```
 
-Directly from Github:
+Or directly from GitHub:
 
-```
+```ini
 lib_deps =
   alvarowolfx/ESP32QRCodeReader
 ```
 
-## Examples
+### Arduino IDE / Arduino CLI
+
+**Using Terminal/Command Line:**
+
+```bash
+# Install using Arduino CLI
+arduino-cli lib install ESP32QRCodeReader
+```
+
+**Or install manually:**
+
+1. Download this repository as a ZIP file
+2. In Arduino IDE: Sketch → Include Library → Add .ZIP Library
+3. Select the downloaded ZIP file
+
+### Manual Installation (Git Clone)
+
+```bash
+# For PlatformIO projects, clone into the lib folder
+cd your_project/lib
+git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
+
+# For Arduino projects, clone into the Arduino libraries folder
+# On Linux/macOS:
+cd ~/Arduino/libraries
+git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
+
+# On Windows:
+cd %USERPROFILE%\Documents\Arduino\libraries
+git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
+```
+
+## Usage / Examples
 
 This library comes with a number of example sketches. See File > Examples > ESP32QRCodeReader
 within the Arduino application. You can see them on the `examples` folder on this repository.

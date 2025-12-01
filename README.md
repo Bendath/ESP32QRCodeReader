@@ -64,8 +64,12 @@ git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
 cd ~/Arduino/libraries
 git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
 
-# On Windows:
+# On Windows (Command Prompt):
 cd %USERPROFILE%\Documents\Arduino\libraries
+git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
+
+# On Windows (PowerShell):
+cd $env:USERPROFILE\Documents\Arduino\libraries
 git clone https://github.com/alvarowolfx/ESP32QRCodeReader.git
 ```
 
